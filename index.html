@@ -1,1 +1,556 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="scss/style.css">
+  <title>Softneering</title>
+</head>
+
+<body id="home" data-spy="scroll" data-target="#main-nav">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
+    <div class="container">
+      <a href="#home" class="navbar-brand">
+        <!-- <img src="img/mlogo.png" width="50" height="50" alt=""> -->
+        <div class="logo d-flex align-items-center">
+          <div class="rounded-circle circle1">
+            <div class="rounded-circle circle2 text-center">
+              <div class="text">S</div>
+            </div>
+          </div>
+          <h3 class="px-1">Softneering
+            <div class="extra-small">Delivering Engineering with Softneering</div>
+          </h3>
+        </div>
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#authors" class="nav-link">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SHOWCASE -->
+  <section id="showcase" class="py-5">
+    <div class="primary-overlay text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-right">
+            <h1 class="display-2 mt-5 pt-5">Softneering</h1>
+            <div class="small">Delivering Engineering with Softneering</div>
+            <h2>Delivering..</h2>
+            <h2>..Skills</h2>
+            <h2>..Technologies</h2>
+            <h2>..Solutions</h2>
+            <!-- <a href="#" class="btn btn-outline-secondary btn-lg text-white">
+              <i class="fas fa-arrow-right"></i> Read More
+            </a> -->
+          </div>
+          <div class="col-lg-6">
+            <!-- <img src="img/book.png" alt="" class="img-fluid d-none d-lg-block"> -->
+            <div class="p-5 d-none d-lg-block">
+              <div class="bg-dark d-flex flex-column align-items-end p-5">
+                <h1 style="line-height:2.8rem;font-size:3rem; color: lightgreen;">Striving hard</h1>
+                <h1 style="line-height:2.8rem;font-size:3rem; color: lightcyan;">with Passion</h1>
+                <h1 style="line-height:2.8rem;font-size:3rem" class="primary-font-color">to Deliver</h1>
+                <h1 style="line-height:2.8rem;font-size:3rem; color: lightgoldenrodyellow;">the Best</h1>
+                <h1 style="line-height:2.8rem;font-size:3rem; color: lightsalmon;">Technology</h1>
+                <h1 style="line-height:2.8rem;font-size:3rem; color: lightseagreen;">& Solutions</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="bg-dark text-white py-5">
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-md-4">
+            <input type="text" class="form-control form-control-lg mb-resp" placeholder="Enter Name" id="s_name" required>
+          </div>
+          <div class="col-md-4">
+            <input type="email" class="form-control form-control-lg mb-resp" placeholder="Enter Email" id="s_email" required>
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-primary btn-lg btn-block" onclick="submitSubscribe()">
+              <i class="fas fa-envelope-open-o"></i> Subscribe
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- BOXES -->
+  <!-- <section id="boxes" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-center border-primary mb-resp">
+            <div class="card-body">
+              <h3 class="text-primary">Be Better</h3>
+              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center bg-primary text-white mb-resp">
+            <div class="card-body">
+              <h3>Be Smarter</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center border-primary mb-resp">
+            <div class="card-body">
+              <h3 class="text-primary">Be Faster</h3>
+              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center bg-primary text-white">
+            <div class="card-body">
+              <h3>Be Stronger</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ABOUT / WHY SECTION -->
+  <section id="about" class="py-5 text-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h2 class="text-primary pb-3">
+              Why Softneering ?
+            </h2>
+            <p class="lead pb-3">
+              Where experience and skill matters, here comes Softneering.
+            </p>
+          </div>
+
+          <!-- ACCORDION -->
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fas fa-arrow-circle-down"></i> Inspired
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse1" class="collapse show">
+                <div class="card-body">
+                  We are inspired and passionate company, who believes in providing best services in the IT businesses based out of our best decade long experience.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fas fa-arrow-circle-down"></i> Knowledge
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse2" class="collapse">
+                <div class="card-body">
+                  We believe and continously striving in empowering our partners/ customers with the our best knowledge and experiences, which would help them to run business operations complainlessly.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHORS -->
+  <section id="authors" class="my-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h2 class="text-primary pb-3">
+              Our Core Services
+            </h2>
+            <p class="lead">
+              Some of our coreiest services
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/web.jpg" alt="" class="rounded-circle w-50 mb-3 h-service-img"  >
+              <h3>Web</h3>
+              <p>Whether it be a &ldquo;website&rdquo; or "web application" development, we have been offering great experience in all major Client-End technologies.</p>
+           <!--    <div class="d-flex justify-content-center">
+                <div class="p-4">
+                  <a href="http://facebook.com">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="p-4">
+                  <a href="http://instagram.com">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/mobile.jpg" alt="" class="rounded-circle w-50 mb-3 h-service-img"  >
+              <h3>Mobile Apps</h3>
+              <p>Our expertise in mobile applications development is in align with industries best practises which includes Android/ iOS/ Hybrid platform.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/testing.jpg" alt="" class="rounded-circle w-50 mb-3 h-service-img"  >
+              <h3>Automation Testing</h3>
+              <p>Automation in a tesing unfolding a new horizon in the industry world. We have been offering prowess associate to cater this demand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/cloud.jpg" alt="" class="rounded-circle w-50 mb-3 h-service-img">
+              <h3>Cloud</h3>
+              <p>Moving an application from in-premise to the cloud infrastructure is an increasing practice across many industries due to it's great benefits. And here we are with all expertise in some of the major cloud technololgies such as AWS/ MS Azure/ CloudFoundry. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/devops.png" alt="" class="rounded-circle w-50 mb-3 h-service-img bg-dark"  >
+              <h3>DevOps</h3>
+              <p>DevOps is just an another beautiful solution to accelate CX and DX by introducing cloud concept and automation to the existing cultural environment. And here we are to help you with the smooth implementation with our experienced and passionate staff.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/outsource.jpg" alt="" class="rounded-circle w-50 mb-3 h-service-img"  >
+              <h3>IT Outsourcing Services</h3>
+              <p>We help organizations and businesses to run their processes by resourcing appropriate staffs for a wide range of services such as application support/ maintenance, application development/ design/ solutioning/ architechure, data entry, data center operations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- AUTHORS -->
+    <section id="authors" class="my-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="info-header mb-5">
+              <h2 class="text-primary pb-3">
+                Our Product
+              </h2>
+              <p class="lead">
+                Some of our plaform for users
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/gaufi.png" alt="" class="rounded-circle w-50 mb-3 h-service-img"  >
+                <h3><a href="https://gaufi.com" target="_blank">Gaufi.com</a></h3>
+                <p>You may search for and contact skilled professionals such like Electrician, Mechanic, Plumber, Engineer, Painter, Mobile repairer, Computer repairer, and many more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <h3>Get In Touch</h3>
+          <p class="lead">Do reach us for any suggestions/ queries !!</p>
+          <form class="needs-validation" id="formContactUs"> 
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Name" id="c_name" required>
+            </div>
+
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+              <input type="email" class="form-control" placeholder="Email" id="c_email" required >
+            </div>
+
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-pencil-alt"></i>
+                </span>
+              </div>
+              <textarea class="form-control" placeholder="Message" rows="5" id="c_msg" required minlength="10"></textarea>
+            </div>
+
+            <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg"  onclick="submitContact()">
+          </form>
+        </div>
+
+        <div class="col-lg-3 align-self-center">
+          <!-- <img src="img/mlogo.png" alt="" class="img-fluid"> -->
+          <div class="logo d-flex align-items-center py-3">
+            <div class="rounded-circle circle1">
+              <div class="rounded-circle circle2 text-center">
+                <div class="text">S</div>
+              </div>
+            </div>
+            <h3 class="px-1">Softneering
+              <!-- <div class="extra-small">Delivering xneering with Softneering</div> -->
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Request Submitted</h5>
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Thank you for connecting us.<br>
+          Our team will get back to you as soon as possible.<br>
+          Stay safe, Stay healthy.<br>
+          -- Team Softneering
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="myModalSubs">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Subscription Successful</h5>
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Thank you for subscribing our newsletter. <br>
+          We will be keep posting you with the important & relevant news.<br>
+          Stay safe, Stay healthy.<br>
+          -- Team Softneering
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ml-auto text-left">
+          <div class="small">Softneering Technology Solutions Pvt. Ltd.</div>
+          <div class="small">
+            <i class="fa fa-info-circle"></i>&nbsp;Address:&nbsp;Mumbai, Maharashtra, 401207.
+          </div>
+          <div class="small">
+            <i class="fas fa-phone"></i>&nbsp;Contact:&nbsp;9988776611.
+          </div>
+          <div class="small">
+            <i class="fas fa-envelope"></i>&nbsp;Email:&nbsp;info@softneering.com
+          </div>
+        </div>
+        <div class="col-md-6 ml-auto text-right">
+          <p class="small">
+            Copyright &copy;
+            <span id="year"></span>.&nbsp;All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav' ,offset: 200});
+
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if(this.hash===""){
+        window.history.replaceState(null, null, "#home");
+      }
+      
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+        const scrollTopPosition = $(hash).offset().top-200;
+        console.log('scrollTopPosition',scrollTopPosition,this.hash);
+        $('html, body').animate({
+          scrollTop: scrollTopPosition
+        }, 800, function () {
+          //window.location.hash = hash;
+          window.history.replaceState(null, null, hash);
+
+        });
+      }
+    });
+
+    function submitContact() {
+      var name =  document.getElementById("c_name").value;
+      var email = document.getElementById("c_email").value;
+      var msg =   document.getElementById("c_msg").value;
+      
+      if(!(name!=="" && email!=="" && msg!=="" && msg.length > 9) ){
+        return;
+      }
+      console.log(name,email,msg.length);
+
+      var req = {
+        name:name,
+        email:email,
+        msg:msg,
+        type: 8
+      }
+
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 201) {
+          //document.getElementById("demo").innerHTML = this.responseText;
+          $('form :input').val('');
+          $('#myModal').modal('show');
+          console.log('success')
+        }
+      };
+      xhttp.open("POST", "https://draw-server-sk.herokuapp.com/api/v1/public/contactus", true);
+      //httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      //httpRequest.send('data=' + encodeURIComponent(name));
+
+      xhttp.setRequestHeader("Content-type", "application/json");
+      xhttp.send(JSON.stringify(req));
+    }
+  </script>
+  <script>
+    function submitSubscribe() {
+      var name =  document.getElementById("s_name").value;
+      var email = document.getElementById("s_email").value;
+      
+      if(!(name!=="" && email!=="") ){
+        return;
+      }
+      console.log(name,email);
+
+      var req = {
+        name:name,
+        email:email,
+        type: 9
+      }
+
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 201) {
+          //document.getElementById("demo").innerHTML = this.responseText;
+          $('form :input').val('');
+          $('#myModalSubs').modal('show');
+          console.log('success')
+        }
+      };
+      xhttp.open("POST", "https://draw-server-sk.herokuapp.com/api/v1/public/contactus", true);
+      xhttp.setRequestHeader("Content-type", "application/json");
+      xhttp.send(JSON.stringify(req));
+    }
+  </script>
+</body>
+
+</html>
